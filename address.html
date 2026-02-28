@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHARMA4 | Address</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/logo1-removebg-preview.png"/>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            padding: 0px 40px;
+            padding-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-family: sans-serif;
+        }
+
+        .second{
+            width: 70%;
+            margin: auto;
+        }
+
+        .third{
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            margin: auto;
+        }
+
+        .check{
+            display: flex;
+            width: 60%;
+        }
+
+        .second > ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 5px solid RGB(255, 111, 97);
+            margin-left: 40px;
+            margin-top: 15px;
+        }
+
+        .second > ul li {
+            color: #212121;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .third > p{
+            font-size: 14px;
+        }
+
+        .steps{
+            background-color: RGB(255, 111, 97);
+            padding: 0.5px 5px;
+            border-radius: 50%;
+            color: white;
+            font-weight: 600;
+        }
+
+        .container{
+            background-color: #f9f9f9;
+            width: 100%;
+            height: 100vh;
+            font-family: sans-serif;
+            margin-top: -25px;
+        }
+
+        h5{
+            padding: 20px;
+            margin-left: 160px;
+            margin-top: 30px;
+            font-weight: 600;
+            color: #363636;
+        }
+
+        .main{
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            margin-top: -10px;
+            width: 45%;
+            padding: 20px;
+            margin-left: 160px;
+            border-radius: 5px;
+        }
+
+        form input{
+            width: 100%;
+            padding:6px;
+            border-radius: 5px;
+            border: 0.1px solid rgb(192, 190, 190);
+            outline: none;
+            margin-top: 15px;
+            padding-left: 12px;
+        }
+
+        form input:first-child{
+            padding-bottom: 60px;
+            margin-top: -5px;
+        }
+
+        .radio-inline{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 4px;
+        }
+
+        .radioButtonSection{
+            display: flex;
+            font-size: 12px;
+            justify-content: space-between;
+            padding: 10px;
+            margin-top: 10px;
+            width: 60%;
+        }
+
+        .test{
+            margin-left: 10px;
+            margin-top: -3px;
+            font-weight: 600;
+            color: #666565;
+        }
+
+        #options{
+            accent-color:rgb(241, 97, 53);
+        }
+
+        #submit_button{
+            width: 30%;
+            margin-left: 70%;
+            margin-top: -10px;
+            background-color: RGB(255, 111, 97);
+            color: white;
+            font-weight: 600;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #submit_button:hover{
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        }
+
+        input[type=number] {
+            appearance: textfield;
+        }
+
+        .error {
+            position: relative;
+            animation: shake .1s linear;
+            animation-iteration-count: 3;
+        }
+
+        @keyframes shake {
+            0% { left: -5px; }
+            100% { right: -5px; }
+        }
+
+        .success-message {
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="check">
+            <div class="first">
+                <img src="img/logo1-removebg-preview.png" height="75px" alt="Not found" />
+            </div>
+            <div class="second">
+                <ul>
+                    <li> <span class="steps">1</span> My Cart</li>
+                    <li> <span class="steps">2</span> Order Summary</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="third">
+            <p>Need Help?</p>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h5>Add a New Address</h5>
+        <div class="main">
+            <form id="address-form">
+                <input type="text" id="locality" placeholder="Flat Number, Building Name, Street/Locality"/>
+                <input type="text" placeholder="Landmark (optional)"/>
+                <input type="text" id="pincode" placeholder="Pincode"/>
+                <input type="text" placeholder="Locality"/>
+                <input type="text" id="city" placeholder="City"/>
+                <input type="text" id="state" placeholder="State"/>
+                <input type="text" id="form_name" placeholder="Customer Name"/>
+                <input type="number" name="" id="form_number" placeholder="10 Digit Mobile Number"/>
+                <div class="radioButtonSection">
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="options" checked> <p class="test">HOME</p>
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optradio" id="options"><p class="test">OFFICE</p>
+                    </label>
+                </div>
+                <input type="submit" value="submit" id="submit_button"/>
+            </form>
+            <div id="success-message" class="success-message" style="display: none;">Order successfully placed!</div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("address-form").addEventListener("submit", getData);
+
+        function getData(event) {
+            event.preventDefault();
+
+            let locality = document.getElementById("locality");
+            let pincode = document.getElementById("pincode");
+            let form_number = document.getElementById("form_number");
+            let form_name = document.getElementById("form_name");
+            let state = document.getElementById("state");
+            let city = document.getElementById("city");
+            let successMessage = document.getElementById("success-message");
+
+            // Validation logic
+            if (locality.value.length == 0) {
+                highlightError(locality);
+            } else if (pincode.value.length == 0) {
+                highlightError(pincode);
+            } else if (city.value.length == 0) {
+                highlightError(city);
+            } else if (state.value.length == 0) {
+                highlightError(state);
+            } else if (form_name.value.length == 0) {
+                highlightError(form_name);
+            } else if (form_number.value.length == 0) {
+                highlightError(form_number);
+            } else {
+                // Display success message
+                successMessage.style.display = "block";
+                clearForm(); // Clear form after successful submission
+            }
+        }
+
+        function highlightError(element) {
+            element.classList.add('error');
+            element.style.borderColor = '#ff4c4c';
+
+            setTimeout(function () {
+                element.classList.remove('error');
+                element.style.borderColor = '#acabab';
+            }, 300);
+        }
+
+        function clearForm() {
+            document.getElementById("address-form").reset();
+        }
+    </script>
+</body>
+</html>

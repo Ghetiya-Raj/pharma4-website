@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Pharmacy India | Buy Medicine </title>
+    <link rel="shortcut icon" type="image/jpg" href="img/logo1-removebg-preview.png"/>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://kit.fontawesome.com/5fa36d54c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="outer">
+                <div class="inner1">
+                   <div><a href="index.html"><img src="img/logo1-removebg-preview.png" height="75px" alt="Not found"></a></div>
+                   <div>
+                    <ul>
+                        <li><a href="sProductPage.html">Medicines</a></li>
+                        <li><a href="#">Lab Tests</a></li>
+                        <li><a href="doctors.html">Consult Doctors</a></li>
+                        <li><a href="#">covid 19</a></li>
+                        <li><a href="#">Ayurveda</a></li>
+                        <li><a href="#">Care Plan</a></li>
+                    </ul>
+                   </div>
+                </div>
+                <div class="inner2">
+                    <div>
+                        <p id="login_text_js"><a href="" class="before_login_style">Login</a></p>
+                        <p id="login_text_js1">|</p>
+                        <p id="login_text_js2"><a href="signup.html" class="before_login_style">Signup</a></p>
+                        <P></P>
+                        <P></P>
+                        <p>Offers</p>
+                    </div>
+                    
+                    <div class="cartLogo"> 
+                        <img src="https://onemg.gumlet.io/cart-icon-rebrand_vp4k0f.svg" alt="not found"  id="red-cart" onclick="di()"/>
+                    </div>
+                    <div>
+                        <p>Need Help ?</p>
+                    </div>
+                </div>
+            </div>
+        
+        </nav>
+    
+
+        
+        <hr class="line">
+
+     
+    </header>
+
+
+    <!-- Main section starts from here for doctors consultant page..... -->
+    <div class="mainSection" style="background-color: white;">
+
+    <div class="d_firstSection">
+
+      <div class="d_first_left">
+          <h1>Consult with Doctors across 22+ Specialities, <br>
+            over <span style="color:#913D36;">Chat, Video & Voice calls.</span> </h1>
+            <h2>Skip the struggle of booking appointments. <br>
+              Consult a doctor at your ease</h2>
+
+
+              <input type="text"  placeholder="I have Skin Problem"/> <br>
+
+              <button>CONSULT NOW</button>
+                  
+              <div class="d_banner">
+                <img src="https://onemg.gumlet.io/image/upload/v1625554511/mqz0j8blegoylexsvtsl.png" alt="Not found" />
+              </div>
+      </div>
+
+        <div class="d_firstRight">
+          <video width="95%" height="100%" autoplay muted loop>
+            <source src="https://onemg.gumlet.io/eConsult-final_ro63yx.webm" type="video/webm">
+            </video>
+        </div>
+          
+        
+    </div>
+    
+
+    <div class="sliderChecked"></div>
+
+
+
+
+    </div>
+
+</body>
+</html>
+
+<script>
+   
+
+let val = localStorage.getItem("mobile_number");
+
+if(val.length >= 5){
+  document.getElementById("login_text_js").innerHTML = `<i class="fa-solid fa-user"></i>`;
+  document.getElementById("login_text_js1").innerText = "My Profile";
+  document.getElementById("login_text_js2").innerText = " ";
+  document.getElementById("signup").innerHTML = `<b>PROFILE</b>`;
+
+  document.getElementById("signup").addEventListener("click" , function(){
+    window.location.href = "index.html";
+  });
+
+  
+}
+document.getElementById("red-cart").addEventListener("click" , di);
+
+  function di(){
+    window.location.href = "cart.html";
+  }
+</script>
